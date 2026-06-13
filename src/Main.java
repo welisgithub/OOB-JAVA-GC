@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         Filme panicoDois = new Filme();
-        panicoDois.nome = "Pânico 2";
+        panicoDois.nome = "Pânico 3";
         panicoDois.anoDeLancamento = 1997;
         panicoDois.genero = "Terror";
         panicoDois.incluidoNoPlano = true;
