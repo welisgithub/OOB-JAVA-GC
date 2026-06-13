@@ -7,16 +7,21 @@ public class Main {
         panicoDois.anoDeLancamento = 1997;
         panicoDois.genero = "Terror";
         panicoDois.incluidoNoPlano = true;
-        panicoDois.notaMedia = 6.4;
+        panicoDois.somaMedia = 0;
         panicoDois.duracaoEmMinutos = 120;
-        panicoDois.numeroDeAvaliacoes = 100000;
+        panicoDois.totalAvaliacoes = 0;
 
-        System.out.println(panicoDois.nome);
-        System.out.println(panicoDois.anoDeLancamento);
-        System.out.println(panicoDois.genero);
-        System.out.println(panicoDois.incluidoNoPlano);
-        System.out.println(panicoDois.notaMedia);
-        System.out.println(panicoDois.duracaoEmMinutos);
-        System.out.println(panicoDois.numeroDeAvaliacoes);
+        /* ********************************************************************************************************** */
+
+        panicoDois.avalia(8);
+        panicoDois.avalia(9.5);
+        panicoDois.avalia(5.6);
+        panicoDois.avalia(7);
+        panicoDois.exibeFicha();
+        panicoDois.avaliaTeclado();
+        panicoDois.avaliaTeclado();
+        panicoDois.avaliaTeclado();
+        panicoDois.avaliaTeclado();
+        panicoDois.exibeFicha();
     }
 }
