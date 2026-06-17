@@ -8,6 +8,10 @@ import java.util.Scanner;
 public class Filme extends Titles implements Classificavel {
     private String diretor;
 
+    public Filme(String nome) {
+        this.setNome(nome);
+    }
+
     public String getDiretor() {
         return diretor;
     }

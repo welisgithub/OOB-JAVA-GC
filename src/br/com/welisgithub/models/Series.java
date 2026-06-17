@@ -6,6 +6,10 @@ public class Series extends Titles {
     private int duracaoEmMinutosTotal;
     private int minutosPorEpisodio;
 
+    public Series(String nome) {
+        this.setNome(nome);
+    }
+
     //******************************************************************************************************************
 
     public int getTemporadas() {

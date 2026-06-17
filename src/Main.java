@@ -12,27 +12,27 @@ public class Main {
     public static void main(String[] args) {
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 
-        Filme panicoDois = new Filme();
-        panicoDois.setNome("Pânico 2");
+        Filme panicoDois = new Filme("Pânico 2");
+        //panicoDois.setNome("Pânico 2");
         panicoDois.setAnoDeLancamento(1997);
         panicoDois.setGenero("Terror");
         panicoDois.setDuracaoEmMinutos(120);
 
-        Filme panicoTres = new Filme();
-        panicoTres.setNome("Pânico 3");
+        Filme panicoTres = new Filme("Pânico 3");
+        //panicoTres.setNome("Pânico 3");
         panicoTres.setAnoDeLancamento(2001);
         panicoTres.setGenero("Terror");
         panicoTres.setDuracaoEmMinutos(140);
 
 
-        Series theBoys = new Series();
+        Series theBoys = new Series("The Boys");
         Episodeo episodeo = new Episodeo();
         episodeo.setNumero(1);
         episodeo.setSeries(theBoys);
         episodeo.setTotalDeVisualisacoes(250);
         FiltroRecomenda filtro = new FiltroRecomenda();
         filtro.filtra(episodeo);
-        theBoys.setNome("The Boys");
+        //theBoys.setNome("The Boys");
         theBoys.setAnoDeLancamento(2024);
         theBoys.setGenero("Ficção");
         theBoys.setTemporadas(4);
