@@ -18,6 +18,12 @@ public class Main {
         panicoDois.setGenero("Terror");
         panicoDois.setDuracaoEmMinutos(120);
 
+        Filme panicoTres = new Filme();
+        panicoTres.setNome("Pânico 3");
+        panicoTres.setAnoDeLancamento(2001);
+        panicoTres.setGenero("Terror");
+        panicoTres.setDuracaoEmMinutos(140);
+
 
         Series theBoys = new Series();
         Episodeo episodeo = new Episodeo();
@@ -54,9 +60,11 @@ public class Main {
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
         listaDeFilmes.add(panicoDois);
+        listaDeFilmes.add(panicoTres);
         System.out.println("Numero de filems na lista: " + listaDeFilmes.size());
         System.out.println("Primeiro filme da lista: " + listaDeFilmes.get(0).getNome());
-        
+        System.out.println(listaDeFilmes.get(0).toString());
+        System.out.println(listaDeFilmes);
 
 
     }
