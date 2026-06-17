@@ -6,6 +6,34 @@ public class Series extends Titles {
     private int duracaoEmMinutosTotal;
     private int minutosPorEpisodio;
 
+    //******************************************************************************************************************
+
+    public int getTemporadas() {
+        return temporadas;
+    }
+
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
+    }
+
+    public int getEpisodeos() {
+        return episodeos;
+    }
+
+    public void setEpisodeos(int episodeos) {
+        this.episodeos = episodeos;
+    }
+
+    public int getMinutosPorEpisodio() {
+        return minutosPorEpisodio;
+    }
+
+    public void setMinutosPorEpisodio(int minutosPorEpisodio) {
+        this.minutosPorEpisodio = minutosPorEpisodio;
+    }
+
+    //******************************************************************************************************************
+
     @Override
     public int getDuracaoEmMinutos(){
         return temporadas * episodeos * minutosPorEpisodio;

@@ -89,6 +89,7 @@ public class Titles {
         }else{
             System.out.println("Não incluso no plano...");
         }
-        System.out.println("Duração: " + duracaoEmMinutos + " minutos.");
+        System.out.println(" ");
+        System.out.println(" ");
     }
 }
