@@ -12,28 +12,28 @@ public class Main {
     public static void main(String[] args) {
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 
-        Filme panicoDois = new Filme("Pânico 2");
-        //panicoDois.setNome("Pânico 2");
-        panicoDois.setAnoDeLancamento(1997);
+        Filme panicoDois = new Filme("Pânico 2", 1997);
+//        panicoDois.setNome("Pânico 2");
+//        panicoDois.setAnoDeLancamento(1997);
         panicoDois.setGenero("Terror");
         panicoDois.setDuracaoEmMinutos(120);
 
-        Filme panicoTres = new Filme("Pânico 3");
-        //panicoTres.setNome("Pânico 3");
-        panicoTres.setAnoDeLancamento(2001);
+        Filme panicoTres = new Filme("Pânico 3", 2001);
+//        panicoTres.setNome("Pânico 3");
+//        panicoTres.setAnoDeLancamento(2001);
         panicoTres.setGenero("Terror");
         panicoTres.setDuracaoEmMinutos(140);
 
 
-        Series theBoys = new Series("The Boys");
+        Series theBoys = new Series("The Boys", 2024);
         Episodeo episodeo = new Episodeo();
         episodeo.setNumero(1);
         episodeo.setSeries(theBoys);
         episodeo.setTotalDeVisualisacoes(250);
         FiltroRecomenda filtro = new FiltroRecomenda();
         filtro.filtra(episodeo);
-        //theBoys.setNome("The Boys");
-        theBoys.setAnoDeLancamento(2024);
+//        theBoys.setNome("The Boys");
+//        theBoys.setAnoDeLancamento(2024);
         theBoys.setGenero("Ficção");
         theBoys.setTemporadas(4);
         theBoys.setEpisodeos(12);

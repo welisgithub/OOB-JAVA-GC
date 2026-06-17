@@ -13,6 +13,12 @@ public class Titles {
     private Boolean incluidoNoPlano = true;
     private int duracaoEmMinutos;
 
+    public Titles(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+
     //***********************************************get&set************************************************************
 
     public void setNome(String nome) {
