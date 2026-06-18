@@ -1,9 +1,11 @@
 package br.com.welisgithub.models;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Titles {
+public class Titles implements Comparable<Titles>{
     Scanner leitura = new Scanner(System.in);
     private String nome;
     private String genero;
@@ -97,5 +99,10 @@ public class Titles {
         }
         System.out.println(" ");
         System.out.println(" ");
+    }
+
+    @Override
+    public int compareTo(@NotNull Titles otherTitle) {
+        return this.getNome().compareTo(otherTitle.getNome());
     }
 }

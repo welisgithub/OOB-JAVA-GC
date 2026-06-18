@@ -1,3 +1,5 @@
+package br.com.welisgithub.main;
+
 import br.com.welisgithub.calculos.CalculadoraDeTempo;
 import br.com.welisgithub.calculos.FiltroRecomenda;
 import br.com.welisgithub.models.Episodeo;
@@ -58,13 +60,13 @@ public class Main {
 //        panicoDois.avaliaTeclado();
 //        panicoDois.avaliaTeclado();
 
-        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
-        listaDeFilmes.add(panicoDois);
-        listaDeFilmes.add(panicoTres);
-        System.out.println("Numero de filems na lista: " + listaDeFilmes.size());
-        System.out.println("Primeiro filme da lista: " + listaDeFilmes.get(0).getNome());
-        System.out.println(listaDeFilmes.get(0).toString());
-        System.out.println(listaDeFilmes);
+        //ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        //listaDeFilmes.add(panicoDois);
+        //listaDeFilmes.add(panicoTres);
+        //System.out.println("Numero de filems na lista: " + listaDeFilmes.size());
+        //System.out.println("Primeiro filme da lista: " + listaDeFilmes.get(0).getNome());
+        //System.out.println(listaDeFilmes.get(0).toString());
+        //System.out.println(listaDeFilmes);
 
 
     }
