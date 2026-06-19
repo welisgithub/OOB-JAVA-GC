@@ -1,5 +1,6 @@
 package br.com.welisgithub.models;
 
+import br.com.welisgithub.exception.ErrorAgeException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Locale;
@@ -18,6 +19,17 @@ public class Titles implements Comparable<Titles>{
     public Titles(String nome, int anoDeLancamento) {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public Titles(TituloOmdb meuTituloOmdb) {
+        this.nome = meuTituloOmdb.title();
+
+        if (meuTituloOmdb.year().length() > 4) {
+            throw new ErrorAgeException("Não consegui converter o ano" +
+                    " porque tem mais de 04 caracteres.");
+        }
+        this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }
 
 
@@ -104,5 +116,14 @@ public class Titles implements Comparable<Titles>{
     @Override
     public int compareTo(@NotNull Titles otherTitle) {
         return this.getNome().compareTo(otherTitle.getNome());
+    }
+
+    @Override
+    public String toString() {
+        return "Titles{" +
+                "Nome ='" + nome + '\'' +
+                ", Ano = " + anoDeLancamento +
+                ", Duração = " + duracaoEmMinutos +
+                '}';
     }
 }
